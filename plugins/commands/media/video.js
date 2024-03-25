@@ -46,7 +46,7 @@ const langData = {
 
 async function playVideo(message, video, getLang) {
     const { title, id } = video;
-    message.react("⏳");
+    message.reply("ĐANG TẢI VIDEO,VUI LÒNG CHỜ.");
     const cachePath = join(global.cachePath, `_ytvideo${Date.now()}.mp4`);
     try {
         let stream = ytdl(id, { quality: 18 });
@@ -60,7 +60,7 @@ async function playVideo(message, video, getLang) {
         if (stat.size > _48MB) {
             message.reply(getLang("video.tooLarge"));
         } else await message.reply({
-            body: `[ ${title} ]`,
+            body: `=========>Tải thành công<=========\n Tiêu đề:『 ${title} 』`,
             attachment: global.reader(cachePath)
         });
         message.react("✅");

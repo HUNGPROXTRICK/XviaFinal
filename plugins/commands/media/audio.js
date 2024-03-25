@@ -52,7 +52,7 @@ function onLoad() {
 
 async function playMusic(message, song, getLang) {
     const { title, id } = song;
-    message.react("⏳");
+    message.reply("ĐANG TẢI AUDIO...");
     const cachePath = join(global.cachePath, `_ytaudio${Date.now()}.mp3`);
     try {
         let stream = ytdl(id, { quality: 'lowestaudio' });
