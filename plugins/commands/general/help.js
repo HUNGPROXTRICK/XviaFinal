@@ -10,7 +10,7 @@ const config = {
 const langData = {
 
         "vi_VN": {
-        "help.list": "{list}\n\n➜ Bot có: {total} lệnh có thể sử dụng\n➜ Sử dụng: {syntax} [lệnh] để xem chi tiết về lệnh\n🔥 Bot DaiTo V2 🔥",
+        "help.list": "{list}\n\n➜ Bot có: {total} lệnh có thể sử dụng\n➜ Sử dụng: {syntax} [lệnh] để xem chi tiết về lệnh\nBot Xavia bản lỏ",
         "help.commandNotExists": "➜ Lệnh {command} không tồn tại",
         "help.commandDetails": `
             📌Tên: {name}
