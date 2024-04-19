@@ -162,6 +162,7 @@ async function onCall({ message }) {
 
     const imageStream = await global.getStream(image);
     await message.reply({
+      body: sinh thiệc các em 😍,
       attachment: [imageStream]
     });
   } catch (e) {
