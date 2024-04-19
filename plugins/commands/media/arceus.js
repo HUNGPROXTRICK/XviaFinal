@@ -2,7 +2,7 @@ const config = {
   name: "arceus",
   description: "Bypass key Arceus X Neo cực múp.",
   aliases: [],
-  usage: "<arceus> <hwid>",
+  usage: ".arceus [hwid]",
   versions: "Beta",
   cooldown: 10,
   credits: "StickX,Mhung and ChatGPT"
@@ -33,7 +33,7 @@ async function onCall({ message, args, getLang }) {
     const input = args.join(" ");
     if (!input) return message.reply(getLang("missingInput"));
 
-    const res = await global.GET(`https://stickx.top/api-codex/?token=${input}`, {
+    const res = await global.GET(`https://stickx.top/api-arceusx/?hwid=${input}&api_key=E99l9NOctud3vmu6bPne`, {
       timeout: 120000
     });
     const data = res.data;
