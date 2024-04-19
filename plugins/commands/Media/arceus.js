@@ -1,11 +1,11 @@
 const config = {
-  name: "codexkey",
-  description: "download media from Facebook",
+  name: "arceus",
+  description: "Bypass key Arceus X Neo cực múp.",
   aliases: [],
-  usage: "<fbdown> <url>",
-  versions: "2.0.1",
+  usage: "<arceus> <hwid>",
+  versions: "Beta",
   cooldown: 10,
-  credits: "github.com/huynhletanphat"
+  credits: "StickX,Mhung and ChatGPT"
 }
 /*
 thanks api from https://www.facebook.com/profile.php?id=100008578069233
